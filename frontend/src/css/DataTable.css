@@ -1,0 +1,48 @@
+/* DataTable.css */
+
+.data-table {
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(123, 121, 121, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.data-row {
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-key {
+  font-weight: bold;
+  color: #333;
+}
+
+.data-value {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .data-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .data-value {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .data-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
